@@ -2,19 +2,19 @@ var Logger = require('./Logger');
 var Shopper = require('./Shopper');
 var Store = require('./Store');
 
-var logger = new Logger();
+var logger = new Logger().getInstance();
 
 logger.log('starting app...');
 
 var alex = new Shopper('alex', 500)
 var ski_shop = new Store('Steep and Deep Supplies', [
     {
-        item: 'Downhill Skis',
+        item: 'shoes',
         qty: 5,
         price: 750
     },
     {
-        item: 'Knit Hat',
+        item: 'phone',
         qty: 20,
         price: 5
     }
