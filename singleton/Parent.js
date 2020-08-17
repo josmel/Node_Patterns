@@ -20,7 +20,7 @@ class Singleton {
 
     constructor() {
         if (!Singleton.instance) {
-            console.log(`first conect singleton`);
+            console.log(`first conect singleton patterns`);
             Singleton.instance = new Parents();
         }
     }
