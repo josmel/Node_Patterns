@@ -1,10 +1,11 @@
-const parent = require('./Parent');
+const Parent = require('./Parent');
 const More = require('./More');
 const Other = require('./Other');
 
-parent.setMessage("sssss");
-var more = new More("sssss");
-var other = new Other("wwww");
+const parent = new Parent().getInstance();
+parent.setMessage("first message");
+var more = new More("second message");
+var other = new Other("three message");
 
 
 console.log(parent.getConunt())

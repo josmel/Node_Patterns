@@ -7,7 +7,7 @@ class Parents {
     }
 
     getConunt() {
-        return this.conect.length;
+        return `${this.conect.length} messages`;
     }
 
     setMessage(msg) {
@@ -30,11 +30,4 @@ class Singleton {
     }
 
 }
-module.exports = new Parents();
-
-/*const single = new Parents();
-(single.setMessage("mam"));
-(single.setMessage("dad"));
-(single.setMessage("brother"));
-console.log(single.getConunt() + ` parents`);
-*/
+module.exports = Singleton;
