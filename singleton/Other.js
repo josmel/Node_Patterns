@@ -1,6 +1,7 @@
 
-const parent = require('./Parent');
-class Parents {
+const Parent = require('./Parent');
+const parent = new Parent().getInstance();
+class Other {
 
     constructor(message) {
         parent.setMessage(message)
@@ -10,4 +11,4 @@ class Parents {
 
 
 }
-module.exports = Parents;
+module.exports = Other;
