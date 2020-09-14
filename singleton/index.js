@@ -7,5 +7,5 @@ parent.setMessage("first message");
 var more = new More("second message");
 var other = new Other("three message");
 
-
+comsole.log("data dummie");
 console.log(parent.getConunt())
